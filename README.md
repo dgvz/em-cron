@@ -19,6 +19,13 @@ Or install it yourself as:
     $ gem install em-cron
 
 ## Usage
+```ruby
+EM.run do
+  EM::Cron.schedule("* * * * *") do
+    puts "hello world"
+  end
+end
+```
 
 ## Contributing
 
