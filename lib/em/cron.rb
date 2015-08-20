@@ -1,6 +1,6 @@
 require "em/cron/version"
 
-module Em
+module EM
   module Cron
     # Your code goes here...
   end

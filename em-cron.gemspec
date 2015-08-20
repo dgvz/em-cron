@@ -5,7 +5,7 @@ require 'em/cron/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "em-cron"
-  spec.version       = Em::Cron::VERSION
+  spec.version       = EM::Cron::VERSION
   spec.authors       = ["Dylan Griffith"]
   spec.email         = ["dyl.griffith@gmail.com"]
 
