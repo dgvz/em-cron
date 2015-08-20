@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Dylan Griffith"]
   spec.email         = ["dyl.griffith@gmail.com"]
 
-  spec.summary       = %q{Simple gem for running code on a schedule using the crontab syntax.}
-  spec.description   = %q{Simple gem for running code on a schedule using the crontab syntax.}
+  spec.summary       = %q{Simple Eventmachine library for running code on a schedule using the crontab syntax.}
+  spec.description   = %q{Simple Eventmachine library for running code on a schedule using the crontab syntax.}
   spec.homepage      = "https://github.com/dgvz/em-cron"
   spec.license       = "MIT"
 

@@ -1,6 +1,6 @@
 # EM::Cron
 
-Simple gem for running code on a schedule using the crontab syntax.
+Simple [Eventmachine](https://github.com/eventmachine/eventmachine) library for running code on a schedule using the crontab syntax.
 
 ## Installation
 
