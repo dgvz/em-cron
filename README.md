@@ -20,9 +20,10 @@ Or install it yourself as:
 
 ## Usage
 ```ruby
+require 'em/cron'
 EM.run do
-  EM::Cron.schedule("* * * * *") do
-    puts "hello world"
+  EM::Cron.schedule("* * * * *") do |time|
+    puts "hello world at time: #{time}"
   end
 end
 ```
