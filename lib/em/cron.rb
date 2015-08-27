@@ -16,8 +16,8 @@ module EM
       cron_parser = CronParser.new(cron_string)
       next_time = cron_parser.next(Time.now)
       EM.add_timer(next_time - Time.now) do
-        yield(next_time)
-        schedule(cron_string, &blk)
+        result = yield(next_time)
+        schedule(cron_string, &blk) unless result == :stop
       end
     end
   end
