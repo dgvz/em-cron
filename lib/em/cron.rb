@@ -5,7 +5,8 @@ require "em/cron/version"
 module EM
   class Cron
     # @param cron_string [String]
-    # @yield [Time] the time the block was scheduled to be called by cron
+    # @yield [Time] the time the block was scheduled to be called by cron. If
+    #   yielding this block returns `:stop` then the schedule stops.
     # @example
     #   EM.run do
     #     EM::Cron.schedule("* * * * *") do |time|
